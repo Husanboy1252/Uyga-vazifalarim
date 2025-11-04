@@ -94,37 +94,37 @@
 
 // 7-masala
 
-class Order {
-  constructor() {
-    this.items = [];
-  }
+// class Order {
+//   constructor() {
+//     this.items = [];
+//   }
 
-  addItem(item, quantity, price) {
-    this.items.push({ item, quantity, price });
-  }
+//   addItem(item, quantity, price) {
+//     this.items.push({ item, quantity, price });
+//   }
 
-  removeItem(item) {
-    this.items = this.items.filter((i) => i.item !== item);
-  }
+//   removeItem(item) {
+//     this.items = this.items.filter((i) => i.item !== item);
+//   }
 
-  calculateTotal() {
-    let total = 0;
-    for (let i of this.items) {
-      total += i.quantity * i.price;
-    }
-    return total;
-  }
-}
+//   calculateTotal() {
+//     let total = 0;
+//     for (let i of this.items) {
+//       total += i.quantity * i.price;
+//     }
+//     return total;
+//   }
+// }
 
-const myOrder = new Order();
-myOrder.addItem("Olma", 3, 2);
-myOrder.addItem("Banan", 2, 3);
+// const myOrder = new Order();
+// myOrder.addItem("Olma", 3, 2);
+// myOrder.addItem("Banan", 2, 3);
 
-console.log("Jami:", myOrder.calculateTotal());
+// console.log("Jami:", myOrder.calculateTotal());
 
-myOrder.removeItem("Banan");
+// myOrder.removeItem("Banan");
 
-console.log("Jami after removal:", myOrder.calculateTotal());
+// console.log("Jami after removal:", myOrder.calculateTotal());
 
 // 8-masala
 
