@@ -78,3 +78,56 @@
 // console.log("Qo'shish: ", Mathhisob.qoshuv(10, 5));
 // console.log("Ayirmani hisoblash: ", Mathhisob.ayruv(10, 5));
 // console.log("Ko'paytma: ", Mathhisob.kopaytruv(10, 5));
+
+
+
+// 4-masala===================================================
+class Person {
+  // Maxfiy xususiyatlar (privat)
+  #name;
+  #age;
+
+  constructor(name, age) {
+    this.#name = name;
+    this.#age = age;
+  }
+
+
+  getName() {
+    return this.#name;
+  }
+
+  getAge() {
+    return this.#age;
+  }
+
+  setName(newName) {
+    this.#name = newName;
+  }
+
+  setAge(newAge) {
+    if (newAge > 0) {
+      this.#age = newAge;
+    } else {
+      console.log("Yosh musbat bolishi kerak");
+    }
+  }
+}
+
+
+const person1 = new Person("husanboy", 25);
+
+
+console.log(person1.getName());
+console.log(person1.getAge()); 
+
+
+person1.setName("Olim");
+person1.setAge(30);
+
+
+console.log(person1.getName()); 
+console.log(person1.getAge());  
+
+
+person1.setAge(-5); 
