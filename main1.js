@@ -81,53 +81,53 @@
 
 
 
-// 4-masala===================================================
-class Person {
-  // Maxfiy xususiyatlar (privat)
-  #name;
-  #age;
+// // 4-masala===================================================
+// class Person {
+//   // Maxfiy xususiyatlar (privat)
+//   #name;
+//   #age;
 
-  constructor(name, age) {
-    this.#name = name;
-    this.#age = age;
-  }
-
-
-  getName() {
-    return this.#name;
-  }
-
-  getAge() {
-    return this.#age;
-  }
-
-  setName(newName) {
-    this.#name = newName;
-  }
-
-  setAge(newAge) {
-    if (newAge > 0) {
-      this.#age = newAge;
-    } else {
-      console.log("Yosh musbat bolishi kerak");
-    }
-  }
-}
+//   constructor(name, age) {
+//     this.#name = name;
+//     this.#age = age;
+//   }
 
 
-const person1 = new Person("husanboy", 25);
+//   getName() {
+//     return this.#name;
+//   }
+
+//   getAge() {
+//     return this.#age;
+//   }
+
+//   setName(newName) {
+//     this.#name = newName;
+//   }
+
+//   setAge(newAge) {
+//     if (newAge > 0) {
+//       this.#age = newAge;
+//     } else {
+//       console.log("Yosh musbat bolishi kerak");
+//     }
+//   }
+// }
 
 
-console.log(person1.getName());
-console.log(person1.getAge()); 
+// const person1 = new Person("husanboy", 25);
 
 
-person1.setName("Olim");
-person1.setAge(30);
+// console.log(person1.getName());
+// console.log(person1.getAge()); 
 
 
-console.log(person1.getName()); 
-console.log(person1.getAge());  
+// person1.setName("Olim");
+// person1.setAge(30);
 
 
-person1.setAge(-5); 
+// console.log(person1.getName()); 
+// console.log(person1.getAge());  
+
+
+// person1.setAge(-5); 
