@@ -42,8 +42,8 @@ const fs = require("fs");
 // fs moduli yordamida fayilyaratib o'qish va matin qo'shish==========
 
 
-fs.writeFileSync("info.html","Salom Dunyo")
-const a =fs.readFileSync("info.html","utf-8")
-console.log(a);
+// fs.writeFileSync("info.html","Salom Dunyo")
+// const a =fs.readFileSync("info.html","utf-8")
+// console.log(a);
 
 
