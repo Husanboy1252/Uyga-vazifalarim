@@ -1,0 +1,12 @@
+const fs =require("fs")
+const {json} = require("stream/consumers")
+const read_file =(file_name)=>{
+    return JSON.parse(fs.readFileSync(`./data/${file_name}`,"utf-8"))
+}
+ const write_File = (file_name,data)=>{
+    return fs.writeFileSync(`.data/${file_name}`,JSON.stringify(data,null,4))
+ }
+module.exports ={
+    read_file,
+write_File
+}
